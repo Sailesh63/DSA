@@ -1,13 +1,14 @@
 class Solution {
-    public int sumOfSquaresOfDigits(int n){
-        int sum = 0;
-        while(n > 0){
-            int dig = n % 10;
-             sum = sum + (dig * dig);
-            n = n / 10;
-        }
-        return sum;
+   public int sumOfSquaresOfDigits(int n){
+    int sum = 0;
+    while( n > 0){
+        int dig = n % 10;
+        sum = sum + (dig * dig);
+        n = n/10;
+
     }
+    return sum;
+   }
     public boolean isHappy(int n) {
         int slow = n;
         int fast = n;
@@ -24,8 +25,7 @@ class Solution {
             }
         }
         return true;
-
-
+       
         
     }
 }
